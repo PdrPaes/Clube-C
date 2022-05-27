@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main ()
+{
+  int valor;
+  
+  printf("Informe o valor a ser calculada a tabuada: ");
+  scanf("%d",&valor);
+  
+  printf("%d vezes 1 = %d \n%d vezes 2 = %d \n%d vezes 3 = %d \n%d vezes 4 = %d \n%d vezes 5 = %d \n%d vezes 6 = %d \n%d vezes 7 = %d \n%d vezes 8 = %d \n%d vezes 9 = %d \n",valor,valor*1,valor,valor*2,valor,valor*3,valor,valor*4,valor,valor*5,valor,valor*6,valor,valor*7,valor,valor*8,valor,valor*9);
+  
+  
+  return 0;
+}
