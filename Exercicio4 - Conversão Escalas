@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    float c, f;
+    
+    printf("Informe o valor da temperatura em graus Fahrenheit: ");
+    scanf("%f",&f);
+    
+    c = (f - 32.0) * (5.0 / 9.0);
+    
+    printf("O valor convertido para Graus Celsius é %.2f",c);
+
+    return 0;
+}
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int c, f;
+    
+    printf("Informe o valor da temperatura em graus Fahrenheit: ");
+    scanf("%d",&f);
+    
+    c = (f - 32.0) * (5.0 / 9.0);
+    
+    printf("O valor convertido para Graus Celsius é %d",c);
+
+    return 0;
+}
