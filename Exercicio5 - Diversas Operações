@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float n1, n2, letraA,letraB,letraC,letraD,letraE,letraF;
+    
+    printf("Informe o primeiro valor: ");
+    scanf("%f",&n1);
+    
+    printf("Informe o segundo valor: ");
+    scanf("%f",&n2);
+    
+    letraA = n1 + n2;
+    letraB = n1 * pow(n2,2);
+    letraC = pow(n1,2);
+    letraD = sqrt(pow(n1,2)+pow(n2,2));
+    letraE = sin(n1-n2);
+    
+    if(n1 >= 0){
+        letraF = n1;
+    } else {
+        letraF = n1 * (-1);
+    }
+    
+    printf("\nA soma dos numeros é %.2f",letraA);
+    printf("\nO produto do primeiro pelo quadrado do segundo é %.2f",letraB);
+    printf("\nO quadrado do primeiro %.2f",letraC);
+    printf("\nA raiz quadrada da soma dos quadrados é %.2f",letraD);
+    printf("\nO seno da diferença é %.2f",letraE);
+    printf("\nO módulo é %.2f",letraF);
+    
+    return 0;
+}
+
+
+Versão 2.0
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float n1, n2, letraA,letraB,letraC,letraD,letraE,letraF;
+    
+    printf("Informe o primeiro valor: ");
+    scanf("%f",&n1);
+    
+    printf("Informe o segundo valor: ");
+    scanf("%f",&n2);
+    
+    
+    if(n1 >= 0){
+        letraF = n1;
+    } else {
+        letraF = n1 * (-1);
+    }
+    
+    printf("\nA soma dos numeros é %.2f",letraA = n1 + n2);
+    printf("\nO produto do primeiro pelo quadrado do segundo é %.2f",letraB = n1 * pow(n2,2));
+    printf("\nO quadrado do primeiro %.2f",letraC = pow(n1,2));
+    printf("\nA raiz quadrada da soma dos quadrados é %.2f",letraD = sqrt(pow(n1,2)+pow(n2,2)));
+    printf("\nO seno da diferença é %.2f",letraE = sin(n1-n2));
+    printf("\nO módulo é %.2f",letraF);
+    
+    return 0;
+}
